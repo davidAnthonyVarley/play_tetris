@@ -5,6 +5,7 @@ class GridSpace {
   public int occupied;  //if ==1, full. if ==0, empty
   public int colour;
   
+  // I have three almost identical constructors bc I did not appreciate the value of coding standards before this lol
   public GridSpace() {//int occupied, int colour) {
     this.occupied = 0;
     this.colour = #000000;
@@ -15,6 +16,7 @@ class GridSpace {
     this.colour = colour;
   }
   
+  //this is use in create_tetrominoes for code documentation, you'll see if you go to where I create the shapes
   public GridSpace( String type) {
     if (type.equals("full")) {
       this.occupied = 1;
