@@ -7,7 +7,7 @@ final int SQUARE_LENGTH =SQUARE_WIDTH;
 
 
 GridSpace[][] grid;
-int[] tetrominoPosition; //will have two values, x and y, of current_tetromino being controlled
+int[] tetrominoPosition; // the index address of the tetromino - will have two values, x and y, of current_tetromino being controlled
 GridSpace[][] current_tetromino;
 
 int fr;
