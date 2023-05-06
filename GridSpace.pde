@@ -1,0 +1,46 @@
+//grid = 2d array of 'space' objects in grid
+
+class GridSpace {
+  
+  public int occupied;  //if ==1, full. if ==0, empty
+  public int colour;
+  
+  public GridSpace() {//int occupied, int colour) {
+    this.occupied = 0;
+    this.colour = #000000;
+  }
+  
+  public GridSpace(int  occupied, int colour) {
+    this.occupied = occupied;
+    this.colour = colour;
+  }
+  
+  public GridSpace( String type) {
+    if (type.equals("full")) {
+      this.occupied = 1;
+      this.colour = #000000;
+    }
+    else {
+      this.occupied = 0;
+      this.colour = #000000;
+    }
+      
+  }
+  
+  public GridSpace[][] createGrid() {
+    GridSpace[][] temp_grid = new GridSpace[20][10];
+    
+    for (int i=0; i<20; i++) {
+      for (int j =0; j<10; j++) {
+        
+        GridSpace t = new GridSpace();
+        temp_grid[i][j] = t;
+        
+      }
+    }
+    
+    return temp_grid;
+  }
+  
+  
+}
